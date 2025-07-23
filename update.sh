@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # 显示系统信息
-neofetch
+fastfetch
 # 先帝创业未半而中道崩殂
-trap 'echo "退出了嗷" && kill -1 $$' SIGINT
+trap 'echo "用户退出" && kill -1 $$' SIGINT
 # 读取上次更新时间
 grep -e -Syu /var/log/pacman.log | tail -1
 
